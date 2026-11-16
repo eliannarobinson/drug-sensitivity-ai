@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Helvetica, Arial, sans-serif">
+<title>How Venetoclax works: blocking BCL-2 triggers apoptosis</title>
+<style>
+.a{animation-duration:14s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+.cap{opacity:0;font-size:18px;fill:#E4ECFA;text-anchor:middle}
+#c1{animation-name:c1}#c2{animation-name:c2}#c3{animation-name:c3}#c4{animation-name:c4}#c5{animation-name:c5}
+@keyframes c1{0%,15%{opacity:1}18%,97%{opacity:0}100%{opacity:1}}
+@keyframes c2{0%,17%{opacity:0}20%,36%{opacity:1}39%,100%{opacity:0}}
+@keyframes c3{0%,37%{opacity:0}40%,56%{opacity:1}59%,100%{opacity:0}}
+@keyframes c4{0%,57%{opacity:0}60%,76%{opacity:1}79%,100%{opacity:0}}
+@keyframes c5{0%,77%{opacity:0}80%,94%{opacity:1}97%,100%{opacity:0}}
+#drug{animation-name:drug}
+@keyframes drug{0%,17%{transform:translate(-250px,-60px);opacity:0}19%{opacity:1;transform:translate(-250px,-60px)}31%,94%{transform:translate(0,0);opacity:1}98%,100%{opacity:0;transform:translate(0,0)}}
+#bim{animation-name:bim}
+@keyframes bim{0%,27%{transform:translate(0,0)}42%,96%{transform:translate(90px,-7px)}99%,100%{transform:translate(0,0)}}
+#baxon{animation-name:baxon}
+@keyframes baxon{0%,43%{opacity:0}52%,94%{opacity:1}98%,100%{opacity:0}}
+.pore{opacity:0;animation-name:pore}
+@keyframes pore{0%,58%{opacity:0}63%,94%{opacity:1}98%,100%{opacity:0}}
+.cyt{opacity:0;animation-name:cyt}
+@keyframes cyt{0%,61%{opacity:0;transform:translate(0,0)}64%{opacity:1;transform:translate(0,0)}78%{opacity:1;transform:translate(0,-80px)}84%,100%{opacity:0;transform:translate(0,-90px)}}
+#inner{transform-origin:400px 220px;animation-name:inner}
+@keyframes inner{0%,79%{transform:scale(1);opacity:1}90%,95%{transform:scale(.82);opacity:.6}100%{transform:scale(1);opacity:1}}
+#mem{transform-origin:400px 220px;animation-name:mem}
+@keyframes mem{0%,79%{stroke-dasharray:1100 0;transform:scale(1)}90%,95%{stroke-dasharray:46 26;transform:scale(.9)}100%{stroke-dasharray:1100 0;transform:scale(1)}}
+.bub{opacity:0;animation-name:bub}
+@keyframes bub{0%,80%{opacity:0;transform:translate(0,0)}86%{opacity:1}93%{opacity:1;transform:translate(var(--dx),var(--dy))}98%,100%{opacity:0;transform:translate(var(--dx),var(--dy))}}
+#memlbl{animation-name:memlbl}
+@keyframes memlbl{0%,79%{opacity:1}84%,96%{opacity:0}100%{opacity:1}}
+</style>
+<rect width="800" height="440" rx="16" fill="#0B1220"/>
+<g font-size="13" fill="#7F8BA6">
+<circle cx="70" cy="20" r="6" fill="#5CC8FF"/><text x="82" y="25">BCL-2</text>
+<circle cx="150" cy="20" r="6" fill="#FF7AB6"/><text x="162" y="25">BIM (death signal)</text>
+<polygon points="300,14 306,17.5 306,24.5 300,28 294,24.5 294,17.5" fill="#FFC266"/><text x="314" y="25">Venetoclax</text>
+<rect x="404" y="13" width="11" height="14" rx="3" fill="#B69CFF"/><text x="422" y="25">BAX</text>
+<circle cx="476" cy="20" r="4" fill="#E4ECFA"/><text x="486" y="25">Cytochrome c</text>
+</g>
+<circle id="mem" class="a" cx="400" cy="220" r="175" fill="#0F1829" stroke="#6B7FAD" stroke-width="5" stroke-linecap="round"/>
+<g class="bub a" style="--dx:26px;--dy:10px;animation-delay:0.00s"><circle cx="564" cy="280" r="10" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<g class="bub a" style="--dx:-26px;--dy:10px;animation-delay:0.12s"><circle cx="236" cy="280" r="13" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<g class="bub a" style="--dx:-26px;--dy:-10px;animation-delay:0.24s"><circle cx="236" cy="160" r="16" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<g class="bub a" style="--dx:-16px;--dy:-23px;animation-delay:0.36s"><circle cx="300" cy="77" r="10" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<g class="bub a" style="--dx:21px;--dy:-18px;animation-delay:0.48s"><circle cx="534" cy="108" r="13" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<g class="bub a" style="--dx:27px;--dy:-7px;animation-delay:0.60s"><circle cx="569" cy="175" r="16" fill="#111A2E" stroke="#6B7FAD" stroke-width="3"/></g>
+<text id="memlbl" class="a" x="400" y="72" font-size="13" fill="#7F8BA6" text-anchor="middle">Cell membrane</text>
+<g id="inner" class="a">
+<ellipse cx="400" cy="240" rx="150" ry="60" fill="#14203A" stroke="#3A4A6E" stroke-width="5"/>
+<path d="M270 240 q13 -25 26 0 t26 0 t26 0 t26 0 t26 0 t26 0 t26 0 t26 0 t26 0 t26 0" fill="none" stroke="#24314F" stroke-width="3"/>
+<text x="400" y="285" font-size="13" fill="#7F8BA6" text-anchor="middle">Mitochondrion</text>
+<g class="cyt a"><circle cx="460" cy="215" r="4" fill="#E4ECFA"/></g>
+<g class="cyt a" style="animation-delay:.25s"><circle cx="495" cy="222" r="4" fill="#E4ECFA"/></g>
+<g class="cyt a" style="animation-delay:.5s"><circle cx="525" cy="232" r="4" fill="#E4ECFA"/></g>
+<g class="cyt a" style="animation-delay:.15s"><circle cx="480" cy="242" r="4" fill="#E4ECFA"/></g>
+<g class="pore a"><ellipse cx="460" cy="185" rx="8" ry="5" fill="#0F1829" stroke="#B69CFF" stroke-width="2"/></g>
+<g class="pore a"><ellipse cx="495" cy="194" rx="8" ry="5" fill="#0F1829" stroke="#B69CFF" stroke-width="2"/></g>
+<g class="pore a"><ellipse cx="525" cy="207" rx="8" ry="5" fill="#0F1829" stroke="#B69CFF" stroke-width="2"/></g>
+<circle cx="340" cy="181" r="20" fill="#5CC8FF"/>
+<circle cx="340" cy="162" r="11" fill="#0F1829"/>
+<rect x="420" y="166" width="20" height="22" rx="5" fill="#3A4A6E"/>
+<rect id="baxon" class="a" x="420" y="166" width="20" height="22" rx="5" fill="#B69CFF"/>
+<g id="bim" class="a"><circle cx="340" cy="160" r="9" fill="#FF7AB6"/></g>
+<g id="drug" class="a"><polygon points="340,150 349,155 349,165 340,170 331,165 331,155" fill="#FFC266"/></g>
+</g>
+<text id="c1" class="cap a" x="400" y="426">1. BCL-2 holds on to BIM, a death signal, so the cell survives</text>
+<text id="c2" class="cap a" x="400" y="426">2. Venetoclax enters the cell, slots into BCL-2 and pushes BIM out</text>
+<text id="c3" class="cap a" x="400" y="426">3. Freed BIM switches on BAX</text>
+<text id="c4" class="cap a" x="400" y="426">4. BAX punches holes in the mitochondrion and cytochrome c leaks out</text>
+<text id="c5" class="cap a" x="400" y="426">5. The cell breaks apart into small pieces: apoptosis</text>
+</svg>

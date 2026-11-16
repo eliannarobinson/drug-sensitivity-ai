@@ -1,0 +1,27 @@
+# Packages this project needs.
+# Install them all at once with: pip install -r requirements.txt
+# Versions are pinned to the ones this app was built and checked with.
+
+# Spreadsheet-style tables (rows and columns) in Python
+pandas==3.1.1
+
+# Fast math on columns of numbers
+numpy==2.5.4
+
+# Statistics, including correlation and p-values
+scipy==1.18.1
+
+# Tools for measuring how well a gene separates sensitive from resistant cells
+scikit-learn==1.9.1
+
+# Turns Python scripts into a web app you can click through
+streamlit==1.67.0
+
+# Interactive charts (the scatter plot of expression vs drug response)
+plotly==7.1.0
+
+# A compact file format for the biomarker database the app will read
+pyarrow==26.0.1
+
+# Jupyter notebooks, for checking the data one step at a time
+jupyter==1.1.1

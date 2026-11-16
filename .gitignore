@@ -1,0 +1,19 @@
+# Do not upload the raw data. The DepMap files are large, and this app
+# will publish a smaller summary instead.
+data/
+
+# A private copy of the installed packages, created in step 1.
+.venv/
+venv/
+
+# Files Python creates while running. They are leftovers, not source code.
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Autosave copies Jupyter makes inside notebooks.
+.ipynb_checkpoints/
+
+# macOS metadata and local secrets.
+.DS_Store
+.env
