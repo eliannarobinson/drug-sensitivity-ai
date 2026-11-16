@@ -104,7 +104,7 @@ def render():
     )
     st.caption(
         "Each point is one of the 100 genes saved for this drug: the 50 strongest sensitivity links "
-        "and the 50 strongest resistance links. Sky blue is sensitivity and pink is resistance. "
+        "and the 50 strongest resistance links. Blue is sensitivity and pink is resistance. "
         "Higher on the plot means a smaller false discovery rate, so more confidence. "
         "The strongest names that have room are labeled. Hover any point for the rest. "
         "The other genes tested for this drug are not on this plot."

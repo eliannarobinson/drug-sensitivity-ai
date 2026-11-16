@@ -19,7 +19,7 @@ BIOMARKERS_PATH = PROCESSED / "biomarkers.parquet"
 DRUG_RESPONSE_PATH = PROCESSED / "drug_response.parquet"
 EXPRESSION_PATH = PROCESSED / "expression.parquet"
 
-# Sky blue always means sensitivity. Pink always means resistance.
+# Blue always means sensitivity. Pink always means resistance.
 SENSITIVITY = SENSITIVE
 RESISTANCE = RESISTANT
 
@@ -456,7 +456,7 @@ def metric_row(cards: list[dict]):
 def color_key():
     st.html(
         '<div class="bx-key">'
-        '<span class="sens"><i></i>Sky blue: sensitivity, cells responded better</span>'
+        '<span class="sens"><i></i>Blue: sensitivity, cells responded better</span>'
         '<span class="res"><i></i>Pink: resistance, cells responded worse</span>'
         "</div>"
     )
@@ -669,7 +669,7 @@ def format_p(p_value: float) -> str:
 
 
 def direction_pill(correlation: float):
-    """Color cue for the scatter: sky blue for a better response, pink for a worse one."""
+    """Color cue for the scatter: blue for a better response, pink for a worse one."""
     if correlation < 0:
         tone = "sens"
         word = "Sensitivity"
@@ -772,5 +772,5 @@ def render_scatter(drug_name, gene, gene_symbol, key_prefix, stored_row=None):
     )
     st.caption(
         "Each point is one cell line. Hover a point for its name. "
-        "Point color is the cancer type. Sky blue and pink are reserved for sensitivity and resistance, so they are not used as cancer-type colors."
+        "Point color is the cancer type. Blue and pink are reserved for sensitivity and resistance, so they are not used as cancer-type colors."
     )

@@ -18,7 +18,7 @@ def render():
     )
     st.html(
         '<p class="bx-lead">Search a drug or a gene to see the strongest links in the DepMap and GDSC2 '
-        "cell-line screens. Sky blue means higher expression went with a better response. "
+        "cell-line screens. Blue means higher expression went with a better response. "
         "Pink means higher expression went with a worse one. A clear first example is Venetoclax and BCL2.</p>"
     )
     metric_row(
@@ -37,7 +37,7 @@ def render():
     <p>The drug reduced survival more. Those cells were more sensitive.</p>
   </div>
   <div class="bx-card sens">
-    <h3>Sky blue: sensitivity</h3>
+    <h3>Blue: sensitivity</h3>
     <p>Higher gene expression went with a better response. The correlation is negative.</p>
   </div>
   <div class="bx-card res">

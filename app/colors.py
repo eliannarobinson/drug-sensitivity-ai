@@ -1,6 +1,6 @@
 """One set of colours for every page and chart."""
 
-SENSITIVE = "#5CC8FF"  # sky blue: genes linked to drug sensitivity
+SENSITIVE = "#5CC8FF"  # blue: genes linked to drug sensitivity
 RESISTANT = "#FF7AB6"  # pink: genes linked to resistance
 MUTED = "#7F8BA6"  # axis labels and gridlines
 BACKGROUND = "#0B1220"

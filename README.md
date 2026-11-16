@@ -6,7 +6,7 @@ Find genes that track how cancer cell lines respond to a drug, using public DepM
 
 The picture above is the Venetoclax case study: blocking BCL-2 lets the cell's death signal through, and the cell breaks apart. In the app that drawing plays as a short animation. On GitHub it stays still.
 
-Pick a drug and the app lists genes whose expression goes with a better response or a worse one. Pick a gene and it lists the drugs that gene is linked to. Sky blue means higher expression went with a better response. Pink means a worse one. A lower AUC means the drug reduced survival more, so a sensitivity link is a negative correlation.
+Pick a drug and the app lists genes whose expression goes with a better response or a worse one. Pick a gene and it lists the drugs that gene is linked to. Blue means higher expression went with a better response. Pink means a worse one. A lower AUC means the drug reduced survival more, so a sensitivity link is a negative correlation.
 
 The first example is Venetoclax and BCL2. BCL2 is the strongest sensitivity gene for that drug (r = −0.30 across 698 cell lines). The case-study page walks through why that result is expected, and what it does not prove.
 
